@@ -1,0 +1,10 @@
+<h1>投稿</h1>
+ <%= form_for( @post , url: post_create_path) do |f| %>
+    タイトル:<%= f.text_field :title %><br>
+    旅した日:<%= f.text_field :travel_day %><br>
+    コメント:<%= f.text_field :travel_coment %><br>
+    他ユーザーコメント:<%= f.text_field :other_coment %><br>
+    ユーザー名:<%= f.text_field :user_name %><br>           
+    
+<%= f.submit "登録" %>
+<% end %>

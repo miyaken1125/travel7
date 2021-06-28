@@ -1,0 +1,12 @@
+<h1>ユーザー一覧</h1>
+<div  class="contaner" >
+    <table class="table">
+        <% @users.each do |user| %>
+        <tr>
+            <td> <%= link_to user.user_name, show_path(user) %></td>
+        </tr>
+        <% end %>
+    </table>
+</div>
+
+
