@@ -23,5 +23,5 @@ class PostsController < ApplicationController
   private
     def post_params 
       params.require(:user).permit(:title, :traveled, :travel_day, :travel_coment, :other_coment, :user_id)
-
+    end  
 end
