@@ -3798,3 +3798,99 @@ Did you mean?  password_digest):
   
 app/views/users/new.html.erb:8:in `block in _app_views_users_new_html_erb__469885240_1125227470960'
 app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__469885240_1125227470960'
+Started GET "/" for ::1 at 2021-06-28 11:32:25 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+Started GET "/" for ::1 at 2021-06-28 11:32:26 +0900
+  Rendered users/new.html.erb within layouts/application (194.2ms)
+Completed 500 Internal Server Error in 387ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `password' for #<User:0x000001a1ab310be8>
+Did you mean?  password_digest):
+     5:     生年月日:<%= f.text_field :birthday %><br>
+     6:     住所:<%= f.text_field :user_adress %><br>
+     7:     メール:<%= f.text_field :email %><br>           
+     8:     パスワード:<%= f.text_field :password %><br>
+     9:     <%# 確認用パスワード:<%= f.text_field :password_comfirmation %><br> 
+    10: <%= f.submit "登録" %>
+    11: <% end %>
+  
+app/views/users/new.html.erb:8:in `block in _app_views_users_new_html_erb__598796006_896937036260'
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__598796006_896937036260'
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `password' for #<User:0x000001a1aa097d68>
+Did you mean?  password_digest):
+     5:     生年月日:<%= f.text_field :birthday %><br>
+     6:     住所:<%= f.text_field :user_adress %><br>
+     7:     メール:<%= f.text_field :email %><br>           
+     8:     パスワード:<%= f.text_field :password %><br>
+     9:     <%# 確認用パスワード:<%= f.text_field :password_comfirmation %><br> 
+    10: <%= f.submit "登録" %>
+    11: <% end %>
+  
+app/views/users/new.html.erb:8:in `block in _app_views_users_new_html_erb__598796006_896927141620'
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__598796006_896927141620'
+Started GET "/" for ::1 at 2021-06-28 11:33:17 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 1165ms (Views: 1138.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2021-06-28 11:33:29 +0900
+  
+SyntaxError (C:/Users/user/Desktop/VisualStadio/travel7/app/controllers/posts_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/posts_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+Started POST "/create" for ::1 at 2021-06-28 11:34:24 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"No9+S7OGT/69F6xaQC3WlEJtpCbWki+KMiz0hSgR4DeIs3tELPZwW54QvQ+tXREj/68oHoD4GryH47AxDsEhwQ==", "user"=>{"user_name"=>"111", "nick_name"=>"111", "birthday"=>"111", "user_adress"=>"111", "email"=>"1111"}, "commit"=>"ワン"}
+Unpermitted parameters: :user_name, :nick_name, :birthday, :user_adress, :email
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 2.0ms)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/posts_controller.rb:16:in `create'
+Started POST "/create" for ::1 at 2021-06-28 11:43:54 +0900
+  
+ArgumentError (Invalid route name, already in use: 'show' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:10:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/create" for ::1 at 2021-06-28 11:50:37 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"No9+S7OGT/69F6xaQC3WlEJtpCbWki+KMiz0hSgR4DeIs3tELPZwW54QvQ+tXREj/68oHoD4GryH47AxDsEhwQ==", "user"=>{"user_name"=>"111", "nick_name"=>"111", "birthday"=>"111", "user_adress"=>"111", "email"=>"1111"}, "commit"=>"ワン"}
+Unpermitted parameters: :user_name, :nick_name, :birthday, :user_adress, :email
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 4.0ms)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/posts_controller.rb:16:in `create'
+Started POST "/create" for ::1 at 2021-06-28 11:52:43 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"No9+S7OGT/69F6xaQC3WlEJtpCbWki+KMiz0hSgR4DeIs3tELPZwW54QvQ+tXREj/68oHoD4GryH47AxDsEhwQ==", "user"=>{"user_name"=>"111", "nick_name"=>"111", "birthday"=>"111", "user_adress"=>"111", "email"=>"1111"}, "commit"=>"ワン"}
+Unpermitted parameters: :user_name, :nick_name, :birthday, :user_adress, :email
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/posts_controller.rb:16:in `create'
