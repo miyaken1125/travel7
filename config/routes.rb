@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   get 'posts/index'
   get 'posts/new'
   get 'posts/show'
-  
+# ↓to: 'users#show'のコントローラーを見に行く。  
+  get 'posts/:id/show', to: 'posts#show', as: 'post/show'
   post 'posts/create', to: 'posts#create', as: 'post_create'
   
  

@@ -36,3 +36,4 @@ ActiveRecord::Schema.define(version: 2021_06_26_005529) do
   end
 
 end
+# datetime →  2000/1/20
