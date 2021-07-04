@@ -1,4 +1,14 @@
 class UsersController < ApplicationController
+  before_action:forbid_login_user,{only:[:new,:create,:login_form,:login]}
+  def ensure_correct_user
+    if @current_user.id != params[:id].to_i
+       flash[:notice] = "権限がありません"
+       redirect_to("/posts/index")
+    end
+  end   
+
+
+  
   def new
     @user = User.new
   end
@@ -10,12 +20,40 @@ class UsersController < ApplicationController
   def index
     @users = User.all
   end
+  
+  def login_form
+    
+  end
+
+  def login
+    @user = User.find_by(email: params[:email], password: params[:password])
+    if @user
+      session[:user_id] = @user.id
+      flash[:notice] = "ログインしました"
+      redirect_to ("/posts/index")
+    else
+      @error_message = "メールアドレスor パスワードが間違っています"
+      render("users/login_form")
+    end
+  end
+
+  def logout
+      session[:user_id] = nil
+      flash[:notice] = "ログアウトしました"
+      redirect_to("/login")   
+  
+  end
+  
+  
+  
+   
 
 
   # データベースに保存する仕組みを書く。
   def create
     @user = User.new(user_params)  
     if @user.save  
+      session[:user_id] = @user.id
       redirect_to show_path(@user.id)
     else  
       render :new

@@ -1,0 +1,12 @@
+<h1>ユーザー一覧</h1>
+<div  class="contaner" >
+    <table class="table">
+        <% @comments.each do |comment| %>
+        <tr>
+            <td> <%= link_to comment.user_id, show_path(comment) %></td>
+        </tr>
+        <% end %>
+    </table>
+</div>
+
+

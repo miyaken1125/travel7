@@ -14,9 +14,28 @@
 
   <body>
     <%= render "layouts/header" %>
-    <div class = "contaner">
+   <div class = "contaner">
       <%= yield %>
     </div>
+    
+    <% if session[:user_id] %>
+       <li>
+          現在ログイン中のユーザーID:
+          <%= session[:user_id] %>
+      </li>
+    <% else %>
+      <li>
+           <%= link_to(current_user.name, "/users/#{current_user.id}") %>
+      </li>
+    <% end %>
+
+
+
+
+    
+
+
+
 
   </body>
 </html>
