@@ -5,9 +5,18 @@
 <% end %>
 
  <%= form_tag("/login") do %>
-          <p>メールアドレス</p>
-          <input name="email" value="<%= @email %>">
-          <p>パスワード</p>
-          <input type="password" name="password" value="<%= @password %>">
-          <input type="submit" value="ログイン">
+  <p>メールアドレス</p>
+  <input name="email" value="<%= @email %>">
+  <p>パスワード</p>
+  <input type="password" name="password" value="<%= @password %>">
+  <input type="submit" value="ログイン">
+ <% end %>
+
+<%# こっちの書き方で練習してみてください。 %>
+ <%= form_for( :user, url: login_path ) do |f| %>
+  <p>メールアドレス</p>
+  <%= f.text_field :email %>
+  <p>パスワード</p>
+  <%= f.password_field :password %>
+  <%= f.submit "ログイン" %>
  <% end %>

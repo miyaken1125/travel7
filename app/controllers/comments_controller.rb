@@ -12,10 +12,11 @@ class CommentsController < ApplicationController
   end
  
   def create
-    @comment = Comment.new(comment_params)  
+    @comment = @current_user.comments.build(comment_params)
+    # @comment = Comment.new(comment_params)  
     if @comment.save  
       # 他のURLに転送（リダイレクト）するには、redirect_toメソッドを用いま
-      redirect_to show_path(@comment.id)
+      redirect_to comment_show_path(@comment.id)
     else  
       render :new
     end
@@ -23,7 +24,7 @@ class CommentsController < ApplicationController
 
   private
     def comment_params 
-      params.require(:comment).permit(:comment, :user_id, :post_id)
+      params.require(:comment).permit(:comment, :post_id)
     end  
 end
 

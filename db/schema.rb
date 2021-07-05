@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2021_07_01_031728) do
     t.datetime "travel_day"
     t.string "travel_coment"
     t.string "other_coment"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -3,7 +3,7 @@
     <table class="table">
         <% @posts.each do |post| %>
         <tr>
-            <td> <%= link_to post.title, show_path(post) %></td>
+            <td> <%= link_to post.title, post_show_path(post) %></td>
         </tr>
         <% end %>
     </table>
