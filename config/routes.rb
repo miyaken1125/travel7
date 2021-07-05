@@ -2,10 +2,10 @@ Rails.application.routes.draw do
 
   get 'comments/new'
   get 'comments/index'
-  
   get 'comments/:id/show', to: 'comments#show', as: 'comment/show'
   post 'comments/create', to: 'comments#create', as: 'comment_create'
  
+
   get 'posts/index'
   get 'posts/new'
   get 'posts/show'
@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get 'posts/:id/show', to: 'posts#show', as: 'post/show'
   post 'posts/create', to: 'posts#create', as: 'post_create'
   
-  
+  get 'users/login'
   get 'users/login_form'
   post 'users/logout', to: 'users#logout', as: 'user_logout'
   get 'users/index'

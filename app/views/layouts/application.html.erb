@@ -10,32 +10,28 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    
   </head>
 
   <body>
     <%= render "layouts/header" %>
-   <div class = "contaner">
-      <%= yield %>
-    </div>
+      <div class = "contaner">
+        <%= yield %>
+      </div>
     
     <% if session[:user_id] %>
+       <%# ログイン状態 %>
        <li>
           現在ログイン中のユーザーID:
           <%= session[:user_id] %>
       </li>
     <% else %>
+      <%# ログアウト状態 %>
       <li>
-           <%= link_to(current_user.name, "/users/#{current_user.id}") %>
+           <%# <%= link_to "投稿一覧",users/login_form, class: "nav-link" %>  
       </li>
     <% end %>
-
-
-
-
-    
-
-
-
-
+  
   </body>
 </html>
