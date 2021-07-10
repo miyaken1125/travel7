@@ -3,7 +3,7 @@
     <table class="table">
         <% @comments.each do |comment| %>
         <tr>
-            <td> <%= link_to comment.user_id, show_path(comment) %></td>
+            <td> <%= link_to comment.user_id, comment_show_path(comment) %></td>
         </tr>
         <% end %>
     </table>

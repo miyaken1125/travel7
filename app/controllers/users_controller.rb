@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  # before_action :forbid_login_user,{only:[:new,:create,:login_form,:login]}
-    # before_action :forbid_login_user,{only:[:new,:create,:login_form,:login]}  
+  
   def ensure_correct_user
     if @current_user.id != params[:id].to_i
        flash[:notice] = "権限がありません"
@@ -27,17 +26,18 @@ class UsersController < ApplicationController
   end
 
 
+
   def login
-    @user = User.find_by(email: params[:email], password: params[:password])
-    if @user
+    @user = User.find_by(email: params[:user][:email])
+    if @user && @user.authenticate(params[:user][:password])
       session[:user_id] = @user.id
       flash[:notice] = "ログインしました"
-      redirect_to("/posts/index")
+      redirect_to post_index_path
     else
       @error_message = "メールアドレスまたはパスワードが間違っています"
       @email = params[:email]
       @password = params[:password]
-      render("users/login_form")
+      render :login_form
     end
   end
 
@@ -66,7 +66,8 @@ class UsersController < ApplicationController
 
   private
     def user_params 
-      params.require(:user).permit(:user_name, :nick_name, :birthday, :user_adress, :email, :password, :password_confirmation, :user_gender)
+      params.require(:user).permit(:user_name, :nick_name, :birthday, :user_adress, :email, :password, 
+        :password_confirmation, :user_gender ,:image_name "default_user.jpg")
     end  
 
 end

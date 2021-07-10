@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_01_031728) do
+ActiveRecord::Schema.define(version: 2021_07_08_052804) do
+
+  create_table "add_password_to_users", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "comments", force: :cascade do |t|
     t.text "comment"
@@ -30,6 +35,11 @@ ActiveRecord::Schema.define(version: 2021_07_01_031728) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "prefectures", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "user_name"
     t.string "nick_name"
@@ -38,6 +48,8 @@ ActiveRecord::Schema.define(version: 2021_07_01_031728) do
     t.string "email"
     t.string "password_digest"
     t.integer "user_gender"
+    t.integer "user_gender"
+    t.string   "image_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
