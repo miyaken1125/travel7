@@ -2,14 +2,51 @@
  <%= form_for( @user , url: user_create_path) do |f| %>
     名前:<%= f.text_field :user_name %><br>
     ニックネーム:<%= f.text_field :nick_name %><br>
-    生年月日:<%= f.text_field :birthday %><br>
-    住所:<%= f.text_field :user_adress %><br>
+    生年月日:<%= f.date_select :birthday, start_year: (Time.now.year - 30), use_month_numbers: true, end_year: Time.now.year, dafault: Date.new(1989, 1, 21) %><br/>
+    郵便番号: <input id="zipcode" type="text"/> <button id="search">検索</button><br/>
+    住所:<%= f.text_field :user_adress, id: "address" %><br>
     メール:<%= f.text_field :email %><br>          
     性別<%= f.select :user_gender, {'男性': 1, '女性': 2}, { include_blank: '選択してください'}, { class: 'form-control' , required: true } %>
     パスワード:<%= f.text_field :password %><br> 
     確認用パスワード:<%= f.text_field :password_confirmation %><br> 
     <%# 住所:<%= f.select :prefecture :user_adress %><br>
-    画像:<%= f.image.file_field :image_name {multipart: true} %><br> 
+    画像:<%= f.file_field :image_name, {multipart: true} %><br> 
+
+    <select name="user[prefecture]" id="">
+      <% Prefecture.all.each do |pre| %>
+      <option value=<%= pre.name %> > <%= pre.name %> </option>
+      <% end %>
+    </select>
 
 <%= f.submit "登録" %>
 <% end %>
+<script>
+let search = document.getElementById('search');
+search.addEventListener('click', ()=>{
+    let api = 'https://zipcloud.ibsnet.co.jp/api/search?zipcode=';
+    let input = document.getElementById('zipcode').value;
+    let address = document.getElementById('address');
+    let url = api + input;
+
+    fetchJsonp(url, {
+        timeout: 10000, //タイムアウト時間
+    })
+    .then((response)=>{
+        console.log("ok");
+        return response.json();
+    })
+    .then((data)=>{
+        if(data.status === 400){ //エラー時
+            console.log("error");
+        }else if(data.results === null){
+            console.log("error");
+        } else {
+            console.log(data.results[0]);
+            address.value = data.results[0].address1 + data.results[0].address2 + data.results[0].address3;
+        }
+    })
+    .catch((ex)=>{ //例外処理
+        console.log(ex);
+    });
+}, false);
+</script>

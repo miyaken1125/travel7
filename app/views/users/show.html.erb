@@ -7,11 +7,16 @@
       <p class="card-text"><%= @user.birthday %></p>
       <p class="card-text"><%= @user.user_adress %></p>
       <p class="card-text"><%= @user.email %></p>
-      <p class="card-text"><%= @user.user_gender %></p>
+      <% if @user.user_gender == 1%>
+        <p class="card-text">男</p>
+      <% else %>
+        <p class="card-text">女</p>
+      <% end %>
       <p class="card-text"><%= @user.password %></p>
       <p class="card-text"><%= @user.password_confirmation %></p>
-      <p class="card-text"><%= @user.image_name %></p>
+      <% if @user.image_name %>
+        <p class="card-text"><%= image_tag @user.image_name.url %></p>
+      <% end %>
     </div>
   </div>　
   <% link_to("編集", "/users/#{@user.id}/edit") %>
-<% end %>

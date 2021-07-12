@@ -45,14 +45,13 @@ class UsersController < ApplicationController
       redirect_to("/login")   
   
   end
-  
-  
-  
-   
-
 
   # データベースに保存する仕組みを書く。
   def create
+    p "================="
+    p params[:user]
+    p "================="
+    params[:user][:birthday] = "#{params[:user]["birthday(1i)"]}/#{params[:user]["birthday(2i)"]}/#{params[:user]["birthday(3i)"]}"
     @user = User.new(user_params)  
     if @user.save  
       session[:user_id] = @user.id
