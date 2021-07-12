@@ -15223,3 +15223,483 @@ Migrating to AddImageNameToUsers (20210710073429)
   ↳ bin/rails:4
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
   ↳ bin/rails:4
+Started GET "/" for ::1 at 2021-07-10 21:35:23 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddImageNameToUsers (20210710073429)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddImageNameToUsers (20210710073429)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+Started GET "/" for ::1 at 2021-07-12 09:58:50 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-07-12 09:58:58 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-07-12 10:09:57 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (C:/Users/user/Desktop/VisualStadio/travel7/app/controllers/users_controller.rb:70: syntax error, unexpected tSTRING_BEG, expecting ')'
+...on, :user_gender ,:image_name "default_user.jpg")
+...                              ^
+C:/Users/user/Desktop/VisualStadio/travel7/app/controllers/users_controller.rb:70: syntax error, unexpected ')', expecting end
+...:image_name "default_user.jpg")
+...                              ^):
+  
+app/controllers/users_controller.rb:70: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/controllers/users_controller.rb:70: syntax error, unexpected ')', expecting end
+Started GET "/" for ::1 at 2021-07-12 10:10:04 +0900
+  
+SyntaxError (C:/Users/user/Desktop/VisualStadio/travel7/app/controllers/users_controller.rb:70: syntax error, unexpected tSTRING_BEG, expecting ')'
+...on, :user_gender ,:image_name "default_user.jpg")
+...                              ^
+C:/Users/user/Desktop/VisualStadio/travel7/app/controllers/users_controller.rb:70: syntax error, unexpected ')', expecting end
+...:image_name "default_user.jpg")
+...                              ^):
+  
+app/controllers/users_controller.rb:70: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/controllers/users_controller.rb:70: syntax error, unexpected ')', expecting end
+Started GET "/" for ::1 at 2021-07-12 10:15:11 +0900
+  
+SyntaxError (C:/Users/user/Desktop/VisualStadio/travel7/app/controllers/users_controller.rb:68: syntax error, unexpected ':', expecting ')'
+...on, :user_gender ,:image_name :"default_user.jpg")
+...                              ^
+C:/Users/user/Desktop/VisualStadio/travel7/app/controllers/users_controller.rb:68: syntax error, unexpected ')', expecting end
+...image_name :"default_user.jpg")
+...                              ^):
+  
+app/controllers/users_controller.rb:68: syntax error, unexpected ':', expecting ')'
+app/controllers/users_controller.rb:68: syntax error, unexpected ')', expecting end
+Started GET "/" for ::1 at 2021-07-12 10:15:41 +0900
+  
+SyntaxError (C:/Users/user/Desktop/VisualStadio/travel7/app/controllers/users_controller.rb:68: syntax error, unexpected ':', expecting ')'
+...on, :user_gender ,:image_name :"default_user.jpg")
+...                              ^
+C:/Users/user/Desktop/VisualStadio/travel7/app/controllers/users_controller.rb:68: syntax error, unexpected ')', expecting end
+...image_name :"default_user.jpg")
+...                              ^):
+  
+app/controllers/users_controller.rb:68: syntax error, unexpected ':', expecting ')'
+app/controllers/users_controller.rb:68: syntax error, unexpected ')', expecting end
+Started GET "/" for ::1 at 2021-07-12 10:17:03 +0900
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 1.8ms)
+
+
+  
+SyntaxError (C:/Users/user/Desktop/VisualStadio/travel7/app/views/users/new.html.erb:12: syntax error, unexpected ':', expecting '}'
+...pend=( f.image_file {multipart: true}:image_name );@output_b...
+...                              ^):
+  
+app/views/users/new.html.erb:12: syntax error, unexpected ':', expecting '}'
+Started GET "/" for ::1 at 2021-07-12 10:18:01 +0900
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (C:/Users/user/Desktop/VisualStadio/travel7/app/views/users/new.html.erb:12: syntax error, unexpected '{', expecting ')'
+...nd=( f.image_file :image_name {multipart: true} );@output_bu...
+...                              ^
+C:/Users/user/Desktop/VisualStadio/travel7/app/views/users/new.html.erb:16: syntax error, unexpected end, expecting ')'
+'.freeze; end 
+          ^~~
+C:/Users/user/Desktop/VisualStadio/travel7/app/views/users/new.html.erb:18: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+C:/Users/user/Desktop/VisualStadio/travel7/app/views/users/new.html.erb:20: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/new.html.erb:12: syntax error, unexpected '{', expecting ')'
+app/views/users/new.html.erb:16: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:18: syntax error, unexpected ensure, expecting ')'
+app/views/users/new.html.erb:20: syntax error, unexpected end, expecting ')'
+Started GET "/" for ::1 at 2021-07-12 10:18:27 +0900
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (250.8ms)
+Completed 500 Internal Server Error in 306ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_file' for #<ActionView::Helpers::FormBuilder:0x00000297a1d695a8>):
+     9:     パスワード:<%= f.text_field :password %><br> 
+    10:     確認用パスワード:<%= f.text_field :password_confirmation %><br> 
+    11:     <%# 住所:<%= f.select :prefecture :user_adress %><br>
+    12:     画像:<%= f.image_file :image_name  %><br> 
+    13: 
+    14: <%# {multipart: true} %>
+    15: <%= f.submit "登録" %>
+  
+app/views/users/new.html.erb:12:in `block in _app_views_users_new_html_erb__954884598_1425139226260'
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__954884598_1425139226260'
+Started GET "/" for ::1 at 2021-07-12 10:36:48 +0900
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (142.9ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_field' for #<ActionView::Helpers::FormBuilder:0x00000297a20bbe18>
+Did you mean?  time_field
+               email_field
+               range_field
+               date_field):
+     9:     パスワード:<%= f.text_field :password %><br> 
+    10:     確認用パスワード:<%= f.text_field :password_confirmation %><br> 
+    11:     <%# 住所:<%= f.select :prefecture :user_adress %><br>
+    12:     画像:<%= f.image_field :image_name  %><br> 
+    13: 
+    14: <%# {multipart: true} %>
+    15: <%= f.submit "登録" %>
+  
+app/views/users/new.html.erb:12:in `block in _app_views_users_new_html_erb__954884598_1425140849400'
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__954884598_1425140849400'
+Started GET "/" for ::1 at 2021-07-12 10:41:17 +0900
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (133.8ms)
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `form' for #<ActionView::Helpers::FormBuilder:0x00000297a1e10ce0>
+Did you mean?  for):
+     9:     パスワード:<%= f.text_field :password %><br> 
+    10:     確認用パスワード:<%= f.text_field :password_confirmation %><br> 
+    11:     <%# 住所:<%= f.select :prefecture :user_adress %><br>
+    12:     画像:<%= f.form.file_field :image_name  %><br> 
+    13: 
+    14: <%# {multipart: true} %>
+    15: <%= f.submit "登録" %>
+  
+app/views/users/new.html.erb:12:in `block in _app_views_users_new_html_erb__954884598_1425139571440'
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__954884598_1425139571440'
+Started GET "/" for ::1 at 2021-07-12 10:41:43 +0900
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (135.3ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for #<ActionView::Helpers::FormBuilder:0x00000297a1d394c0>):
+     9:     パスワード:<%= f.text_field :password %><br> 
+    10:     確認用パスワード:<%= f.text_field :password_confirmation %><br> 
+    11:     <%# 住所:<%= f.select :prefecture :user_adress %><br>
+    12:     画像:<%= f.image.file_field :image_name  %><br> 
+    13: 
+    14: <%# {multipart: true} %>
+    15: <%= f.submit "登録" %>
+  
+app/views/users/new.html.erb:12:in `block in _app_views_users_new_html_erb__954884598_1425139128080'
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__954884598_1425139128080'
+Started GET "/" for ::1 at 2021-07-12 11:03:59 +0900
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (156.9ms)
+Completed 500 Internal Server Error in 228ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `form' for #<ActionView::Helpers::FormBuilder:0x00000297a0e4a428>
+Did you mean?  for):
+     9:     パスワード:<%= f.text_field :password %><br> 
+    10:     確認用パスワード:<%= f.text_field :password_confirmation %><br> 
+    11:     <%# 住所:<%= f.select :prefecture :user_adress %><br>
+    12:     画像:<%= f.form.image.form.file_field :image_name %><br> 
+    13: 
+    14: <%# {multipart: true} %>
+    15: <%= f.submit "登録" %>
+  
+app/views/users/new.html.erb:12:in `block in _app_views_users_new_html_erb__954884598_1425125982140'
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__954884598_1425125982140'
+Started GET "/" for ::1 at 2021-07-12 11:04:04 +0900
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (147.4ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `form' for #<ActionView::Helpers::FormBuilder:0x00000297a0bd9450>
+Did you mean?  for):
+     9:     パスワード:<%= f.text_field :password %><br> 
+    10:     確認用パスワード:<%= f.text_field :password_confirmation %><br> 
+    11:     <%# 住所:<%= f.select :prefecture :user_adress %><br>
+    12:     画像:<%= f.form.image.form.file_field :image_name %><br> 
+    13: 
+    14: <%# {multipart: true} %>
+    15: <%= f.submit "登録" %>
+  
+app/views/users/new.html.erb:12:in `block in _app_views_users_new_html_erb__954884598_1425129426960'
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__954884598_1425129426960'
+Started GET "/" for ::1 at 2021-07-12 11:04:56 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (159.3ms)
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `form' for #<ActionView::Helpers::FormBuilder:0x000001edd66dc5e8>
+Did you mean?  for):
+     9:     パスワード:<%= f.text_field :password %><br> 
+    10:     確認用パスワード:<%= f.text_field :password_confirmation %><br> 
+    11:     <%# 住所:<%= f.select :prefecture :user_adress %><br>
+    12:     画像:<%= f.form.image.form.file_field :image_name %><br> 
+    13: 
+    14: <%# {multipart: true} %>
+    15: <%= f.submit "登録" %>
+  
+app/views/users/new.html.erb:12:in `block in _app_views_users_new_html_erb__1009636835_1060508124220'
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__1009636835_1060508124220'
+Started GET "/" for ::1 at 2021-07-12 11:06:24 +0900
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (171.1ms)
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `form' for #<ActionView::Helpers::FormBuilder:0x000001edd673bcc8>
+Did you mean?  for):
+     9:     パスワード:<%= f.text_field :password %><br> 
+    10:     確認用パスワード:<%= f.text_field :password_confirmation %><br> 
+    11:     <%# 住所:<%= f.select :prefecture :user_adress %><br>
+    12:     画像:<%= f.form.image.form.file_field :image_name %><br> 
+    13: 
+    14: <%# {multipart: true} %>
+    15: <%= f.submit "登録" %>
+  
+app/views/users/new.html.erb:12:in `block in _app_views_users_new_html_erb__1009636835_1060508202480'
+app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__1009636835_1060508202480'
+Started GET "/" for ::1 at 2021-07-12 11:07:03 +0900
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 1038ms (Views: 991.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/index" for ::1 at 2021-07-12 11:07:16 +0900
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 145ms (Views: 124.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/show" for ::1 at 2021-07-12 11:07:18 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (C:/Users/user/Desktop/VisualStadio/travel7/app/views/users/show.html.erb:23: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.erb:23: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/users/1/show" for ::1 at 2021-07-12 12:11:10 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 4.5ms)
+
+
+  
+SyntaxError (C:/Users/user/Desktop/VisualStadio/travel7/app/views/users/show.html.erb:23: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/show.html.erb:23: syntax error, unexpected ensure, expecting end-of-input

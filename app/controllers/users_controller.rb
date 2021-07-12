@@ -25,8 +25,6 @@ class UsersController < ApplicationController
     
   end
 
-
-
   def login
     @user = User.find_by(email: params[:user][:email])
     if @user && @user.authenticate(params[:user][:password])
@@ -67,7 +65,7 @@ class UsersController < ApplicationController
   private
     def user_params 
       params.require(:user).permit(:user_name, :nick_name, :birthday, :user_adress, :email, :password, 
-        :password_confirmation, :user_gender ,:image_name "default_user.jpg")
+        :password_confirmation, :user_gender ,:image_name)
     end  
-
+    # "default_user.jpg"
 end

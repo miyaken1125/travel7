@@ -9,8 +9,7 @@
     パスワード:<%= f.text_field :password %><br> 
     確認用パスワード:<%= f.text_field :password_confirmation %><br> 
     <%# 住所:<%= f.select :prefecture :user_adress %><br>
-    画像:<%= f.image_file {multipart: true}:image_name %><br> 
-
+    画像:<%= f.image.file_field :image_name {multipart: true} %><br> 
 
 <%= f.submit "登録" %>
 <% end %>
